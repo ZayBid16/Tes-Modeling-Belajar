@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tes Modalitas Belajar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tes Modalitas Belajar</h1>
+            <p>Jawablah pertanyaan di bawah ini untuk mengetahui gaya belajar kamu!</p>
+        </header>
+
+        <div id="quiz-container">
+
+            <div class="question hidden" data-type="visual">
+                <h2>Saya lebih suka membaca buku atau artikel daripada mendengarkan penjelasan.</h2>
+                <button class="btn" onclick="answer('visual', true)">Ya</button>
+                <button class="btn" onclick="answer('visual', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="kinesthetic">
+                <h2>Saya merasa lebih fokus ketika belajar sambil memegang sesuatu, seperti pena atau benda kecil.</h2>
+                <button class="btn" onclick="answer('kinesthetic', true)">Ya</button>
+                <button class="btn" onclick="answer('kinesthetic', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="visual">
+                <h2>Saya suka mencatat dengan rapi dan menggunakan warna untuk menyoroti poin penting.</h2>
+                <button class="btn" onclick="answer('visual', true)">Ya</button>
+                <button class="btn" onclick="answer('visual', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="auditory">
+                <h2>Saya lebih mudah memahami sesuatu jika ada penjelasan lisan.</h2>
+                <button class="btn" onclick="answer('auditory', true)">Ya</button>
+                <button class="btn" onclick="answer('auditory', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="auditory">
+                <h2>Saya suka mendengarkan musik atau suara untuk membantu saya fokus.</h2>
+                <button class="btn" onclick="answer('auditory', true)">Ya</button>
+                <button class="btn" onclick="answer('auditory', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="kinesthetic">
+                <h2>Saya lebih mudah memahami dengan mencoba sendiri daripada membaca atau mendengar.</h2>
+                <button class="btn" onclick="answer('kinesthetic', true)">Ya</button>
+                <button class="btn" onclick="answer('kinesthetic', false)">Tidak</button>
+            </div>
+            
+            <div class="question hidden" data-type="auditory">
+                <h2>Saya senang mendiskusikan ide dengan orang lain untuk memperjelas pemahaman saya.</h2>
+                <button class="btn" onclick="answer('auditory', true)">Ya</button>
+                <button class="btn" onclick="answer('auditory', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="visual">
+                <h2>Saya lebih mudah memahami informasi jika ada diagram, grafik, atau tabel.</h2>
+                <button class="btn" onclick="answer('visual', true)">Ya</button>
+                <button class="btn" onclick="answer('visual', false)">Tidak</button>
+            </div>
+
+            <div class="question hidden" data-type="kinesthetic">
+                <h2>Saya sering menggambar coretan atau bergerak saat belajar.</h2>
+                <button class="btn" onclick="answer('kinesthetic', true)">Ya</button>
+                <button class="btn" onclick="answer('kinesthetic', false)">Tidak</button>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Hasil Kamu</h2>
+            <p id="result-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
